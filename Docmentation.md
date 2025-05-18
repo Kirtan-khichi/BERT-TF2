@@ -198,7 +198,7 @@ pip install -r requirements.txt
 
 ### Available Pre-trained Models
 
-The following pre-trained models are available for download. You should download them to the `Migrated/Models/` directory:
+The following pre-trained models are available for download. You should download them to the `Models/` directory:
 
 #### Main Models
 
@@ -226,7 +226,7 @@ The following pre-trained models are available for download. You should download
 ### Model Download Instructions
 ```bash
 # Example for BERT-Base Uncased
-cd Migrated/Models
+cd Models
 wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
 unzip uncased_L-12_H-768_A-12.zip
 rm uncased_L-12_H-768_A-12.zip  # Optional: remove zip after extraction
@@ -239,7 +239,7 @@ Each downloaded model contains:
 
 ### Dataset Setup
 
-The following datasets need to be downloaded to the `Migrated/Data/` directory:
+The following datasets need to be downloaded to the `Data/` directory:
 
 #### GLUE Datasets
 You can download the GLUE data by going to [GLUE website](https://gluebenchmark.com/tasks) and following these steps:
@@ -247,20 +247,20 @@ You can download the GLUE data by going to [GLUE website](https://gluebenchmark.
 1. Go to https://gluebenchmark.com/tasks
 2. Register/Login to download the data
 3. Download the zip file containing all GLUE tasks
-4. Extract to `Migrated/Data/GLUE`
+4. Extract to `Data/GLUE`
 
 Alternatively, you can use the Hugging Face datasets library:
 ```bash
 pip install datasets
-python -c "from datasets import load_dataset; load_dataset('glue', 'mrpc', cache_dir='Migrated/Data/GLUE')"
+python -c "from datasets import load_dataset; load_dataset('glue', 'mrpc', cache_dir='Data/GLUE')"
 ```
 
 #### SQuAD Datasets
 First, create the SQuAD directory:
 ```bash
 # Create directories
-mkdir -p Migrated/Data/SQuAD
-cd Migrated/Data/SQuAD
+mkdir -p Data/SQuAD
+cd Data/SQuAD
 ```
 
 Then download the following files:
@@ -286,8 +286,8 @@ def download_file(url, filename):
     urllib.request.urlretrieve(url, filename)
 
 # Create directory if it doesn't exist
-os.makedirs("Migrated/Data/SQuAD", exist_ok=True)
-os.chdir("Migrated/Data/SQuAD")
+os.makedirs("Data/SQuAD", exist_ok=True)
+os.chdir("Data/SQuAD")
 
 # SQuAD v1.1
 download_file("https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json", "train-v1.1.json")
@@ -325,8 +325,8 @@ wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json
 
 The data directory structure after download should look like:
 ```
-Migrated/
-└── Data/
+
+Data/
     ├── GLUE/
     │   ├── CoLA/
     │   ├── MNLI/
