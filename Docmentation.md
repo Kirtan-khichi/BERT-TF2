@@ -52,7 +52,7 @@ Consider this sentence: "The bank is closed." How do you know if this refers to 
 
 ### Masked Language Model (MLM) Explained
 
-![BERT Masked Language Model](images/bert_mlm.png)
+![BERT Masked Language Model](Images/bert_mlm.png)
 
 BERT uses a clever "fill in the blank" approach called Masked Language Model (MLM). Here's how it works:
 
@@ -69,7 +69,7 @@ BERT uses a clever "fill in the blank" approach called Masked Language Model (ML
 
 ### Pre-training and Fine-tuning Architecture
 
-![BERT Pre-training and Fine-tuning](images/bert_pretraining_finetuning.png)
+![BERT Pre-training and Fine-tuning](Images/bert_pretraining_finetuning.png)
 
 BERT's training process consists of two major phases:
 
