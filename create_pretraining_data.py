@@ -42,9 +42,9 @@ import logging
 import tokenization
 import tensorflow as tf
 import os
+from absl import flags, app
 
 # Using compat.v1 for flags as TF2 doesn't have a direct replacement
-flags = tf.compat.v1.flags
 FLAGS = flags.FLAGS
 
 # Define all the required flags with clear descriptions

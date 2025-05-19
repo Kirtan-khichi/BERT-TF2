@@ -50,7 +50,7 @@ from transformers import TFBertModel, BertConfig
 
 FLAGS = flags.FLAGS
 
-# Define command line flags with clear descriptions
+
 flags.DEFINE_string("input_file", None, "")
 flags.DEFINE_string("output_file", None, "")
 flags.DEFINE_string("layers", "-1,-2,-3,-4", "")
