@@ -178,7 +178,6 @@ BERT is based on the Transformer architecture, specifically using only the encod
 ## Setup and Installation <a name="setup"></a>
 
 ### Prerequisites
-- Python 3.10 or higher
 - CUDA-capable GPU (recommended)
 - 12GB+ GPU RAM for BERT-Base, 16GB+ for BERT-Large
 
