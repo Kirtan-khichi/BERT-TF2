@@ -185,7 +185,7 @@ BERT is based on the Transformer architecture, specifically using only the encod
 ### Initial Setup
 ```bash
 # Create virtual environment
-python -m venv tf2_env
+python3.x -m venv tf2_env
 
 # Activate environment
 source tf2_env/bin/activate  # Linux/Mac
@@ -195,6 +195,8 @@ source tf2_env/bin/activate  # Linux/Mac
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+Note: tf.2.x is not supported by latest by 3.13 better to use 3.10.x or 3.11.x
 
 ### Available Pre-trained Models
 

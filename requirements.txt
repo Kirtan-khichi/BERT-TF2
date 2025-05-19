@@ -1,0 +1,10 @@
+absl-py>=1.0.0
+certifi>=2021.10.8
+numpy>=1.23.5
+pandas>=1.2.0
+scikit-learn>=1.6.0
+scipy>=1.6.0
+tensorflow==2.15.0
+tensorflow-hub>=0.16.0
+tqdm>=4.60.0
+transformers>=4.5.0
