@@ -196,7 +196,7 @@ source tf2_env/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-Note: tf.2.x is not supported by latest by 3.13 better to use 3.10.x or 3.11.x
+Note: TensorFlow 2.x is not supported by Python 3.13. It is recommended to use Python 3.10.x or 3.11.x instead.
 
 ### Available Pre-trained Models
 
